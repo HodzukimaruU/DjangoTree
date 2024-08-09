@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% load draw_menu %}
+{% block title %}Tree Menu{% endblock title %}
+{% block static %}
+<link rel="stylesheet" type="text/css" href="{% static "css/core/index.css" %}" type=”image/x-icon”>
+{% endblock static %}
+{% block main %}
+<section class="content">
+  <h1 class="visually-hidden">Tree Menu</h1>
+  {% draw_menu 'Menu1' %}
+  {% draw_menu 'Menu2' %}
+</section>      
+{% endblock main %}
